@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "typescript": "^5.9.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.54.2",
+    "@types/node": "^24.1.0",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0"
+  },
+  "scripts": {
+    "single:lighthouse": "ts-node -r tsconfig-paths/register scripts/run-single-lighthouse.ts",
+    "all:lighthouse": "ts-node -r tsconfig-paths/register scripts/run-all-lighthouse.ts"
+  }
+}

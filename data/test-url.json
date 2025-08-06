@@ -1,0 +1,15 @@
+{
+  "SingleLighthouse": {
+    "url": "https://www.cheqsystems.com/testing-services"
+  },
+  "AllLighthouse": {
+    "firstUrl": "https://www.cheqsystems.com",
+    "secondUrl": "https://www.cheqsystems.com/testing-services",
+    "thirdUrl": "https://www.cheqsystems.com/about",
+    "fourthUrl": "https://www.cheqsystems.com/news",
+    "fifthUrl": "https://www.cheqsystems.com/careers",
+    "sixthUrl": "https://www.cheqsystems.com/contact",
+    "seventhUrl": "https://www.cheqsystems.com/privacy-policy",
+    "eighthUrl": "https://www.cheqsystems.com/game-testing"
+  }
+}
