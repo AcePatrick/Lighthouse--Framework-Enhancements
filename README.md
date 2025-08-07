@@ -44,12 +44,12 @@ npm -v
 
 #### Clone the repository:
 ```bash
-git clone https://github.com/avidcutlet/Ligthhouse-Playwright-Typescript-Automation.git
+git clone https://github.com/avidcutlet/Private-Lighthouse-Automation.git
 ```
 
 #### Navigate to the project directory:
 ```bash
-cd Ligthhouse-Playwright-Typescript-Automation
+cd Private-Lighthouse-Automation
 ```
 
 #### Install dependencies:
@@ -59,7 +59,7 @@ npm install
 
 ## Folder Structure
 ```
-LIGHTHOUSE-PLAYWRIGHT-TYPESCRIPT-AUTOMATION/
+PRIVATE-LIGHTHOUSE-AUTOMATION/
 ├── config/             # Configuration files for Lighthouse.
 ├── data/               # Stores urls test data.
 ├── reports/            # Location where test reports (e.g., Lighthouse results) are generated.
