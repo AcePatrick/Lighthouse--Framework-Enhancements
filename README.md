@@ -1,4 +1,4 @@
-# Lighthouse Playwright TypeScript Automation
+# Private Lighthouse Automation
 
 ## Table of Contents
 - [Introduction](#introduction)
