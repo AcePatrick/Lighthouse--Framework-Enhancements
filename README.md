@@ -79,7 +79,7 @@ PRIVATE-LIGHTHOUSE-AUTOMATION/
 ## Running Scripts
 ### Run Lighthouse for a Single URL
 ```bash
-npm run single:lightouse
+npm run single:lighthouse
 ```
 #### The script will:
 - Run Lighthouse for the URL defined in "SingleLighthouse" data/test-url.json
