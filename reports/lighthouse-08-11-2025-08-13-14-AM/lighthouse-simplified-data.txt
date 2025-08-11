@@ -1,0 +1,60 @@
+
+[Aug 11, 2025, 8:13:47 AM] https://www.cheqsystems.com/testing-services - Mobile-Incognito:
+Score: 67
+Time: Aug 11, 2025, 8:13:47 AM
+Diagnostic Title Text: Largest Contentful Paint element
+Diagnostic Display Text: 4,790 ms
+Diagnostic Redirect Text: Learn more about the Largest Contentful Paint element
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_cheqsystems_com_testing-services-Mobile-Incognito.report.html
+Output Report Path: C:\Users\VonWebsterDLabajo\VS Code\Private-Lighthouse-Automation\reports\lighthouse-08-11-2025-08-13-14-AM
+
+[Aug 11, 2025, 8:13:22 AM] https://www.cheqsystems.com/testing-services - Mobile-Normal:
+Score: 66
+Time: Aug 11, 2025, 8:13:22 AM
+Diagnostic Title Text: Largest Contentful Paint image was lazily loaded
+Diagnostic Display Text: 
+Diagnostic Redirect Text: Learn more about optimal lazy loading
+Diagnostic Redirect Link Text: https://web.dev/articles/lcp-lazy-loading?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: C:\Users\VonWebsterDLabajo\VS Code\Private-Lighthouse-Automation\reports\lighthouse-08-11-2025-08-13-14-AM\screenshot\diagnostic-www_cheqsystems_com_testing-services-Mobile-Normal.png
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: C:\Users\VonWebsterDLabajo\VS Code\Private-Lighthouse-Automation\reports\lighthouse-08-11-2025-08-13-14-AM\screenshot\audit-www_cheqsystems_com_testing-services-Mobile-Normal.png
+Html Report Path: www_cheqsystems_com_testing-services-Mobile-Normal.report.html
+Output Report Path: C:\Users\VonWebsterDLabajo\VS Code\Private-Lighthouse-Automation\reports\lighthouse-08-11-2025-08-13-14-AM
+
+[Aug 11, 2025, 8:14:24 AM] https://www.cheqsystems.com/testing-services - Desktop-Incognito:
+Score: 81
+Time: Aug 11, 2025, 8:14:24 AM
+Diagnostic Title Text: Avoid large layout shifts
+Diagnostic Display Text: 2 layout shifts found
+Diagnostic Redirect Text: Learn how to improve CLS
+Diagnostic Redirect Link Text: https://web.dev/articles/optimize-cls?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_cheqsystems_com_testing-services-Desktop-Incognito.report.html
+Output Report Path: C:\Users\VonWebsterDLabajo\VS Code\Private-Lighthouse-Automation\reports\lighthouse-08-11-2025-08-13-14-AM
+
+[Aug 11, 2025, 8:14:06 AM] https://www.cheqsystems.com/testing-services - Desktop-Normal:
+Score: 79
+Time: Aug 11, 2025, 8:14:06 AM
+Diagnostic Title Text: Avoid large layout shifts
+Diagnostic Display Text: 2 layout shifts found
+Diagnostic Redirect Text: Learn how to improve CLS
+Diagnostic Redirect Link Text: https://web.dev/articles/optimize-cls?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_cheqsystems_com_testing-services-Desktop-Normal.report.html
+Output Report Path: C:\Users\VonWebsterDLabajo\VS Code\Private-Lighthouse-Automation\reports\lighthouse-08-11-2025-08-13-14-AM
