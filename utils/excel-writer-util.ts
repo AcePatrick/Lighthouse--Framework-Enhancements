@@ -11,7 +11,7 @@ export function prepareExcelCopy(outputDir: string): string {
     fs.mkdirSync(outputDir, { recursive: true });
   }
 
-  const outputFileName = `CheQ_Website_Production_PageSpeedInsights_${folderTimestamp}.xlsx`;
+  const outputFileName = `CheQ_Website_Production_LighthouseInsights_${folderTimestamp}.xlsx`;
   const excelPath = path.join(outputDir, outputFileName);
 
   fs.copyFileSync(EXCEL_TEMPLATE_PATH, excelPath);
