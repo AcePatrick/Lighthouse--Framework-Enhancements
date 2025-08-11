@@ -4,7 +4,7 @@ import { SINGLE_TEST_URL } from '@config/lighthouse.config';
 import { folderTimestamp } from '@config/lighthouse.config';
 
 import { runLighthouse } from '@utils/lighthouse-runner-util';
-import { askScreenshotOption } from '@utils/user-input-util';
+import { screenshotOption } from '@config/lighthouse.config';
 import { prepareExcelCopy, writeAllToExcel } from '@utils/excel-writer-util';
 import { getLighthouseOutputPaths } from '@utils/report-path-util';
 
@@ -15,7 +15,8 @@ const lighthouseRuns: Promise<void>[] = [];
 
 // Run all 4 in parallel and wait for all to finish
 (async () => {
-  const screenshotOption = await askScreenshotOption();
+  // IN PROGRESS...
+  // const screenshotOption = await askScreenshotOption();
 
   const url = [SINGLE_TEST_URL];
   let taskIndex = 0;

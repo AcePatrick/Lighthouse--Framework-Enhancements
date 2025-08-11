@@ -1,5 +1,6 @@
 import path from 'path';
 import fs from 'fs';
+import { TEXT_REPORT_NAME } from '@config/lighthouse.config';
 
 export async function getLighthouseOutputPaths(folderTimestamp: string): Promise<string> {
 
@@ -14,7 +15,7 @@ export async function getLighthouseOutputFilePaths(label: string, url: string, o
   const sanitized = sanitizeUrl(url);
   const htmlReportFile = `${sanitized}-${label}`;
   const reportPath = path.join(outputDir, htmlReportFile);
-  const logPath = path.join(outputDir, 'lighthouse-simplified-data.txt');
+  const logPath = path.join(outputDir, TEXT_REPORT_NAME);
   
   // Ensure directory exists
   fs.mkdirSync(outputDir, { recursive: true });
