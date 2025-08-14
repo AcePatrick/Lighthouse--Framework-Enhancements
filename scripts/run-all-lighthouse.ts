@@ -4,7 +4,7 @@ import { ALL_TEST_URLS } from '@config/lighthouse.config';
 import { folderTimestamp } from '@config/lighthouse.config';
 
 import { runLighthouse } from '@utils/lighthouse-runner-util';
-import { askScreenshotOption } from '@utils/user-input-util';
+import { screenshotOption } from '@config/lighthouse.config';
 import { prepareExcelCopy, writeAllToExcel } from '@utils/excel-writer-util';
 import { getLighthouseOutputPaths } from '@utils/report-path-util';
 
@@ -14,11 +14,12 @@ const modes: boolean[] = [false, true]; // false = normal, true = incognito
 
 const BATCH_SIZE = 4;
 
-
 (async () => {
   const outputDir = await getLighthouseOutputPaths(folderTimestamp);
   const excelPath = prepareExcelCopy(outputDir);
-  const screenshotOption = await askScreenshotOption();
+  // IN PROGRESS...
+  // const screenshotOption = await askScreenshotOption();
+  
 
   const allTasks: (() => Promise<void>)[] = [];
   const totalTasks = ALL_TEST_URLS.length * devices.length * modes.length;
@@ -54,10 +55,11 @@ const BATCH_SIZE = 4;
   console.log(`🕐 Started at: ${new Date(startTime).toLocaleString()}`);
   
   // Batch run tasks 4 at a time
-  for (let i = 0; i < allTasks.length; i += BATCH_SIZE) {
+  const allTasksLength = allTasks.length;
+  for (let i = 0; i < allTasksLength; i += BATCH_SIZE) {
     const batch = allTasks.slice(i, i + BATCH_SIZE).map(task => task());
     await Promise.all(batch);
-    console.log(`\n✅ Batch ${i / BATCH_SIZE + 1} completed\n`);
+    console.log(`\n✅ Batch ${i / BATCH_SIZE + 1}/${allTasksLength / BATCH_SIZE} completed\n`);
   }
 
   await writeAllToExcel(
@@ -72,5 +74,6 @@ const BATCH_SIZE = 4;
   const durationSec = (endTime - startTime) / 1000;
   const minutes = Math.floor(durationSec / 60);
   const seconds = (durationSec % 60).toFixed(2);
+
   console.log(`🕐 Duration: ${minutes}m ${seconds}s`);
 })();

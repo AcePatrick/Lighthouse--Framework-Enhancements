@@ -7,6 +7,7 @@ import { reportTimestamp } from '@config/lighthouse.config';
 import { arrangeFiles, getLighthouseOutputFilePaths } from '@utils/report-path-util';
 import { screenshotDiagnosticsBlock } from '@utils/screenshot-util';
 import { performanceScoreRating } from '@utils/performance-score-rating-util';
+import { textWriterUtil } from '@utils/text-writer-util';
 
 export const runLighthouse = async (
   url: string,
@@ -45,41 +46,39 @@ export const runLighthouse = async (
     
     const logTimestamp = reportTimestamp(report.fetchTime);
     
-    console.log('\n📋 Report Summary');
-    console.log('======================');
-    console.log(`URL: ${url}`);
-    console.log(`Mode: ${label}`);
-    console.log(`Date & Time: ${logTimestamp}`);
-    console.log(`Performance Score: ${performanceScore}`);
-    console.log(`Rating: ${performanceScoreRating(performanceScore)}`);
+    // console.log('📋 Report Rating: ${performanceScoreRating(performanceScore)}');
     
     const htmlReportPath = `${reportPath}.report.html`;
     let {
-      diagnosticsAuditTitleTxt,
-      diagnosticsAuditDisplayTxt,
-      redirectTxt,
-      redirectLinkTxt,
-      screenshotPath
+      diagnosticsData,
+      auditsData
     } = await screenshotDiagnosticsBlock(outputDir, htmlReportPath, label, url, device, isIncognito, screenshotOption);
 
     // Write data on text file
-    fs.appendFileSync(logPath, `\n[${logTimestamp}] ${url} - ${label}:`+
-      `\nScore: ${performanceScore}`+
-      `\nTime: ${logTimestamp}`+
-      `\nDiagnostics Audit Title Text: ${diagnosticsAuditTitleTxt}` +
-      `\nDiagnostics Audit Display Text: ${diagnosticsAuditDisplayTxt}`+
-      `\nRedirect Text: ${redirectTxt}`+
-      `\nRedirect Link Text: ${redirectLinkTxt}`+
-      `\nScreenshot Path: ${screenshotPath}`+
-      `\nHtml Report Path: ${htmlReportFile}.report.html`+
-      `\nOutput Report Path: ${outputDir}\n`
+    textWriterUtil(
+      logPath,
+      logTimestamp,
+      url,
+      label,
+      performanceScore,
+      diagnosticsData.diagnosticTitleTxt,
+      diagnosticsData.diagnosticDisplayTxt,
+      diagnosticsData.diagnosticRedirectTxt,
+      diagnosticsData.diagnosticRedirectLinkTxt,
+      diagnosticsData.diagnosticScreenshotPath,
+      auditsData.auditTitleTxt,
+      auditsData.auditRedirectTxt,
+      auditsData.auditRedirectLinkTxt,
+      auditsData.auditScreenshotPath,
+      htmlReportFile,
+      outputDir
     );
 
     // After all report generation
     if (runIndex === totalRuns - 1) {
       console.log('\n🧹 Arranging files on last run...');
       await arrangeFiles(outputDir);
-      console.log(`\n✅ Done. Report saved in: ${outputDir}`);
+      console.log(`\n✅ Done. Lighthouse report saved in: ${outputDir}`);
     }
     
   } catch (err) {

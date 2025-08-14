@@ -1,7 +1,17 @@
+import path from 'path';
 import testUrls from '@data/test-url.json';
 
 export const SINGLE_TEST_URL: string[] = [testUrls.SingleLighthouse.url];
 export const ALL_TEST_URLS = Object.values(testUrls.AllLighthouse);
+
+const excelTemplateName = 'CheQ_Website_Production_LighthouseInsights_Template_08112025.xlsx'
+export const EXCEL_TEMPLATE_PATH = path.resolve('template', excelTemplateName);
+
+export const TEXT_REPORT_NAME: string = 'lighthouse-simplified-data.txt';
+
+export const screenshotOption: number = 1;
+
+export const locatorExplicitWait: number = 20000;
 
 // Folder Format Timestamp
 export const folderTimestamp = new Date().toLocaleString('en-US', {
