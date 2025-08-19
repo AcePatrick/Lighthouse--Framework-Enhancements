@@ -4,14 +4,14 @@ import ExcelJS from 'exceljs';
 import { readFile } from 'fs/promises';
 import { pathToFileURL } from 'url';
 import { imageSize } from 'image-size';
-import { folderTimestamp, EXCEL_TEMPLATE_PATH } from '@config/lighthouse.config';
+import { LIGHTHOUSE_STR, OUTPUT_FOLDER_TIMESTAMP, EXCEL_TEMPLATE_PATH } from '@config/lighthouse.config';
 
 export function prepareExcelCopy(outputDir: string): string {
   if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir, { recursive: true });
   }
 
-  const outputFileName = `CheQ_Website_Production_LighthouseInsights_${folderTimestamp}.xlsx`;
+  const outputFileName = `CheQ_Website_Production_LighthouseInsights_${OUTPUT_FOLDER_TIMESTAMP}.xlsx`;
   const excelPath = path.join(outputDir, outputFileName);
 
   fs.copyFileSync(EXCEL_TEMPLATE_PATH, excelPath);
@@ -144,7 +144,7 @@ export async function writeAllToExcel(
 
       if (entry.diagTitleTxt) setOtherSheetsData(otherSheet, entry.diagDisplayTxt, entry.diagTitleTxt, entry.diagRedirectTxt, entry.diagRedirectLinkTxt, false);
       if (entry.auditTitleTxt) setOtherSheetsData(otherSheet, '', entry.auditTitleTxt, entry.auditRedirectTxt, entry.auditRedirectLinkTxt, true);
-
+      
       // Add screenshots in excel
       if (fs.existsSync(entry.diagScreenshotPathTxt)) setImage(workbook, otherSheet, entry.diagScreenshotPathTxt, false);
       if (fs.existsSync(entry.auditScreenshotPathTxt)) setImage(workbook, otherSheet, entry.auditScreenshotPathTxt, true);
@@ -157,22 +157,20 @@ export async function writeAllToExcel(
     
     const device = label.includes("Mobile") ? "Mobile" : "Desktop";
     const mode = label.includes("Normal") ? "Normal" : "Incognito";
-
+    
     const linkRow = filePaths[device][mode]; 
-
-    const fullPath = path.join(entry.outputReportPathTxt, 'html', entry.htmlReportPathTxt);
-  
+    
+    const fullPath = path.join(entry.outputReportPathTxt, `html-${OUTPUT_FOLDER_TIMESTAMP}`, entry.htmlReportPathTxt);
+    
     // Check file exists (helps debugging if Excel says it can't open)
     if (!fs.existsSync(fullPath)) {
       console.warn('HTML report does not exist:', fullPath);
     } else {
       // Convert to a proper file:// URL and ensure forward-slashes + encoding
       const fileUrl = pathToFileURL(fullPath).toString(); // e.g. "file:///C:/Users/…/html/filename.report.html"
-  
-      // Set Excel cell hyperlink using ExcelJS
+      
       otherSheet.getCell(`E${linkRow}`).value = {
-        text: `${url} — ${label}`,
-        hyperlink: fileUrl
+        formula: `HYPERLINK(".\\html-${OUTPUT_FOLDER_TIMESTAMP}\\${entry.htmlReportPathTxt}", "${url} — ${label}")`
       };
     }
   });
