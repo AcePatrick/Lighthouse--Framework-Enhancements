@@ -6,7 +6,6 @@ import { reportTimestamp } from '@config/lighthouse.config';
 
 import { arrangeFiles, getLighthouseOutputFilePaths } from '@utils/report-path-util';
 import { screenshotDiagnosticsBlock } from '@utils/screenshot-util';
-import { performanceScoreRating } from '@utils/performance-score-rating-util';
 import { textWriterUtil } from '@utils/text-writer-util';
 
 export const runLighthouse = async (

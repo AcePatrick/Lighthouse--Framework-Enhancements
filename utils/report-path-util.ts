@@ -1,10 +1,10 @@
 import path from 'path';
 import fs from 'fs';
-import { TEXT_REPORT_NAME } from '@config/lighthouse.config';
+import { TEXT_REPORT_NAME, OUTPUT_FOLDER_TIMESTAMP } from '@config/lighthouse.config';
 
 export async function getLighthouseOutputPaths(folderTimestamp: string): Promise<string> {
 
-  return path.join(__dirname, '..', 'reports', `lighthouse-${folderTimestamp}`);
+  return path.join(__dirname, '..', 'reports', `lighthouse-${OUTPUT_FOLDER_TIMESTAMP}`);
 }
 
 /**
@@ -36,7 +36,7 @@ export function sanitizeUrl(url: string): string {
 // Arrange files to their designated folders
 export async function arrangeFiles(outputDir: string){
   const jsonDir = path.join(outputDir, 'json');
-  const htmlDir = path.join(outputDir, 'html');
+  const htmlDir = path.join(outputDir, `html-${OUTPUT_FOLDER_TIMESTAMP}`);
 
   // Create Json and Html folder
   fs.mkdirSync(jsonDir, { recursive: true });

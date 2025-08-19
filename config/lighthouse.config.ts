@@ -4,7 +4,10 @@ import testUrls from '@data/test-url.json';
 export const SINGLE_TEST_URL: string[] = [testUrls.SingleLighthouse.url];
 export const ALL_TEST_URLS = Object.values(testUrls.AllLighthouse);
 
-const excelTemplateName = 'CheQ_Website_Production_LighthouseInsights_Template_08142025.xlsx'
+export const LIGHTHOUSE_STR: string = 'lighthouse-';
+export const OUTPUT_FOLDER_TIMESTAMP: string = folderTimestamp();
+
+const excelTemplateName = 'CheQ_Website_Production_LighthouseInsights_Template_08152025.xlsx'
 export const EXCEL_TEMPLATE_PATH = path.resolve('template', excelTemplateName);
 
 export const TEXT_REPORT_NAME: string = 'lighthouse-simplified-data.txt';
@@ -14,7 +17,8 @@ export const screenshotOption: number = 1;
 export const locatorExplicitWait: number = 20000;
 
 // Folder Format Timestamp
-export const folderTimestamp = new Date().toLocaleString('en-US', {
+function folderTimestamp(): string {
+  return new Date().toLocaleString('en-US', {
   year: 'numeric',
   month: '2-digit',
   day: '2-digit',
@@ -27,6 +31,7 @@ export const folderTimestamp = new Date().toLocaleString('en-US', {
   .replace(/:/g, '-')
   .replace('--', '-')
   .toUpperCase();
+}
 
 // Report Format Timestamp
 export function reportTimestamp(fetchTime: string): string {
