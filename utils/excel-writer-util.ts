@@ -4,14 +4,14 @@ import ExcelJS from 'exceljs';
 import { readFile } from 'fs/promises';
 import { pathToFileURL } from 'url';
 import { imageSize } from 'image-size';
-import { LIGHTHOUSE_STR, OUTPUT_FOLDER_TIMESTAMP, EXCEL_TEMPLATE_PATH } from '@config/lighthouse.config';
+import { OUTPUT_FOLDER_TIMESTAMP, EXCEL_TEMPLATE_PATH } from '@config/lighthouse.config';
 
 export function prepareExcelCopy(outputDir: string): string {
   if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir, { recursive: true });
   }
 
-  const outputFileName = `CheQ_Website_Production_LighthouseInsights_${OUTPUT_FOLDER_TIMESTAMP}.xlsx`;
+  const outputFileName = `CheQ_Website_Production_Lighthouse Report_${OUTPUT_FOLDER_TIMESTAMP}.xlsx`;
   const excelPath = path.join(outputDir, outputFileName);
 
   fs.copyFileSync(EXCEL_TEMPLATE_PATH, excelPath);
