@@ -7,7 +7,7 @@ export const ALL_TEST_URLS = Object.values(testUrls.AllLighthouse);
 export const LIGHTHOUSE_STR: string = 'lighthouse-';
 export const OUTPUT_FOLDER_TIMESTAMP: string = folderTimestamp();
 
-const excelTemplateName = 'CheQ_Website_Production_Lighthouse Report_Template_08222025_v2.2.xlsx'
+const excelTemplateName = 'CheQ_Website_Production_Lighthouse Report_Template_08222025_v2.3.xlsx'
 export const EXCEL_TEMPLATE_PATH = path.resolve('template', excelTemplateName);
 
 export const TEXT_REPORT_NAME: string = 'lighthouse-simplified-data.txt';
