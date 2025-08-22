@@ -1,7 +1,6 @@
 import path from 'path';
 
-import { SINGLE_TEST_URL } from '@config/lighthouse.config';
-import { folderTimestamp } from '@config/lighthouse.config';
+import { SINGLE_TEST_URL, OUTPUT_FOLDER_TIMESTAMP } from '@config/lighthouse.config';
 
 import { runLighthouse } from '@utils/lighthouse-runner-util';
 import { screenshotOption } from '@config/lighthouse.config';
@@ -22,7 +21,7 @@ const lighthouseRuns: Promise<void>[] = [];
   let taskIndex = 0;
   const totalTasks = url.length * devices.length * modes.length;
 
-  const outputDir = await getLighthouseOutputPaths(folderTimestamp);
+  const outputDir = await getLighthouseOutputPaths(`lighthouse-${OUTPUT_FOLDER_TIMESTAMP}`);
   const excelPath = prepareExcelCopy(outputDir);
   
   for (const device of devices) {
