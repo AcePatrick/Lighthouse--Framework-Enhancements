@@ -1,0 +1,101 @@
+name: Scheduled Lighthouse Reports
+
+permissions:
+  contents: write  # allow pushing commits
+
+on:
+  schedule:
+    # run every day at 10:00 AM PHT
+    # 2:00 AM UTC = 10:00 AM PHT
+    - cron: "0 2 * * *"   
+  workflow_dispatch:      # allow manual run
+
+jobs:
+  run-lighthouse:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Manila
+
+    # Restrict workflow to only run when the branch is main
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4.2.2
+        with:
+          fetch-depth: 0
+          ref: main
+          
+      - name: Setup Node.js
+        uses: actions/setup-node@v4.1.0
+        with:
+          node-version: '20'
+
+      # Cache Node.js dependencies
+      - name: Cache Node modules
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      
+      # Cache Playwright browsers
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: ${{ runner.os }}-playwright-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-playwright-
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+
+      - name: Run Lighthouse automation
+        run: |
+          for i in 1 2 3; do
+            echo "Running Lighthouse attempt $i..."
+            npm run all:lighthouse && break
+            sleep 10
+          done
+
+      - name: Set up Git user
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      
+      - name: Commit & push reports
+        run: |
+          # Fetch remote branch if it exists
+          git fetch origin auto-daily-report || true
+          
+          # Switch to auto-daily-report (create if missing)
+          if git rev-parse --verify origin/auto-daily-report >/dev/null 2>&1; then
+            git checkout auto-daily-report
+          else
+            git checkout -b auto-daily-report
+          fi
+
+          cp -n -r reports/* reports/
+
+          # Stage the reports folder
+          git add reports/
+          
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(reports): update Lighthouse reports"
+            git push origin auto-daily-report
+          else
+            echo "No changes in reports — skipping commit."
+          fi
+
+      # Upload reports as GitHub artifact (keeps history per run)
+      - name: Upload Lighthouse reports artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse-reports-${{ github.run_id }}-${{ github.run_number }}
+          path: reports/
+          retention-days: 30
