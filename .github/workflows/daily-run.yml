@@ -77,11 +77,12 @@ jobs:
           if git rev-parse --verify origin/auto-daily-report >/dev/null 2>&1; then
             git checkout auto-daily-report
           else
-            git checkout -b auto-daily-report
+            git checkout --orphan auto-daily-report
           fi
 
-          # Remove everything except .git (to keep branch clean)
-          find . -mindepth 1 -not -name ".git" -exec rm -rf {} +
+          # Remove everything except .git and reports (if reports already exists)
+          shopt -s extglob
+          rm -rf !(reports|.git)
 
           # Ensure reports folder exists in auto-daily-report
           mkdir -p reports
