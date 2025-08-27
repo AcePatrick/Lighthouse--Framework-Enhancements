@@ -80,19 +80,15 @@ jobs:
             git checkout --orphan auto-daily-report
           fi
 
-          # Remove everything except .git and reports (if reports already exists)
-          shopt -s extglob
-          rm -rf !(reports|.git)
+          # 🧹 Clean everything except .git and reports/
+          find . -mindepth 1 -maxdepth 1 ! -name ".git" ! -name "reports" -exec rm -rf {} +
 
           # Ensure reports folder exists in auto-daily-report
           mkdir -p reports
 
-          # Copy reports from main if they exist
-          if [ -d ../reports ]; then
-            cp -r ../reports/* reports/ || true
-          else
-            echo "⚠️ No reports found in main branch."
-          fi
+          # Copy reports from main into auto-daily-report/reports (append mode)
+          git checkout main -- reports || true
+          cp -r reports/* ./reports/ || true
 
           # Stage only reports folder
           git add reports/
