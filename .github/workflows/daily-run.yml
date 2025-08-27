@@ -86,7 +86,7 @@ jobs:
 
           # 🧹 Cleanup: remove everything except reports/ and .git
           # 1. Remove tracked files except reports/
-          git ls-files | grep -v '^reports/' | xargs git rm -rf --ignore-unmatch
+          git ls-files | grep -v '^reports/' | xargs -r git rm -rf --ignore-unmatch
 
           # 2. Remove untracked files/folders except reports/
           # -f = force
@@ -130,7 +130,7 @@ jobs:
 
           # 🧹 Cleanup: remove everything except reports/ and .git
           # 1. Remove tracked files except reports/
-          git ls-files | grep -v '^reports/' | xargs git rm -rf --ignore-unmatch
+          git ls-files | grep -v '^reports/' | xargs -r git rm -rf --ignore-unmatch
 
           # 2. Remove untracked files/folders except reports/
           # -f = force
