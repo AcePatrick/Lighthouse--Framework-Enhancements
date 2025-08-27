@@ -81,20 +81,23 @@ jobs:
           fi
 
           # 🧹 Clean everything except .git and reports/
-          find . -mindepth 1 -maxdepth 1 ! -name ".git" ! -name "reports" -exec rm -rf {} +
+          find . -mindepth 1 ! -name ".git" ! -name "reports" -exec rm -rf {} +
 
           # Ensure reports folder exists in auto-daily-report
           mkdir -p reports
-
+          
           # Copy reports from main into auto-daily-report/reports (append mode)
           git checkout main -- reports || true
           cp -r reports/* ./reports/ || true
+          
+          # Commit cleanup
+          git add -A
 
           # Stage only reports folder
           git add reports/
 
           if ! git diff --cached --quiet; then
-            git commit -m "chore(reports): update Lighthouse reports"
+            git commit -m "chore(reports): cleanup & update Lighthouse reports"
             git push -f origin auto-daily-report
           else
             echo "No changes in reports — skipping commit."
