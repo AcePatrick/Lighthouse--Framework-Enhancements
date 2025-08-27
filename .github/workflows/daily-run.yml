@@ -80,8 +80,11 @@ jobs:
             git checkout --orphan auto-daily-report
           fi
 
-          # 🧹 Clean everything except .git and reports/
-          find . -mindepth 1 ! -name ".git" ! -name "reports" -exec rm -rf {} +
+          # Remove everything tracked except reports/
+          git ls-files | grep -v '^reports/' | xargs git rm -rf --ignore-unmatch
+
+          # Remove all untracked files/folders except reports/
+          git clean -fdx -e reports
 
           # Ensure reports folder exists in auto-daily-report
           mkdir -p reports
@@ -89,9 +92,6 @@ jobs:
           # Copy reports from main into auto-daily-report/reports (append mode)
           git checkout main -- reports || true
           cp -r reports/* ./reports/ || true
-          
-          # Commit cleanup
-          git add -A
 
           # Stage only reports folder
           git add reports/
