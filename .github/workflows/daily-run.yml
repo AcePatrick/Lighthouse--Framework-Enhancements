@@ -102,7 +102,7 @@ jobs:
           mkdir -p reports
           
           # Copy reports from main into auto-daily-report/reports (append mode)
-          git checkout main -- reports || true
+          cp -r ../reports/* ./reports/ || true
 
           # Stage all updates
           git add -A
@@ -144,8 +144,11 @@ jobs:
           # 3. Remove untracked files/folders except .git (safety net)
           find . -mindepth 1 -maxdepth 1 ! -name ".git" -exec rm -rf {} +
 
+          # Create reports folder if it doesn't exist
           mkdir -p reports
-          git checkout main -- reports || true
+
+          # Copy fresh reports directly from the workflow workspace
+          cp -r ../reports/* ./reports/ || true
 
           # Stage all updates
           git add -A
