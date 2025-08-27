@@ -67,6 +67,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Save reports temporarily
+        run: |
+          mkdir -p /tmp/lighthouse-reports
+          cp -r reports/* /tmp/lighthouse-reports/
       
       # ----------------------------------
       # Update auto-daily-report (history)
@@ -102,7 +107,7 @@ jobs:
           mkdir -p reports
           
           # Copy reports from main into auto-daily-report/reports (append mode)
-          cp -r ../reports/* ./reports/ || true
+          cp -r /tmp/lighthouse-reports/* ./reports/
 
           # Stage all updates
           git add -A
@@ -113,7 +118,6 @@ jobs:
           else
             echo "No changes in reports — skipping commit."
           fi
-
 
       # ------------------------------------------
       # Update current-day-report (fresh snapshot)
@@ -148,7 +152,7 @@ jobs:
           mkdir -p reports
 
           # Copy fresh reports directly from the workflow workspace
-          cp -r ../reports/* ./reports/ || true
+          cp -r /tmp/lighthouse-reports/* ./reports/
 
           # Stage all updates
           git add -A
