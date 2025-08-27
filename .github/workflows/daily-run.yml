@@ -80,14 +80,25 @@ jobs:
             git checkout -b auto-daily-report
           fi
 
-          cp -n -r reports/* reports/
+          # Remove everything except .git (to keep branch clean)
+          find . -mindepth 1 -not -name ".git" -exec rm -rf {} +
 
-          # Stage the reports folder
+          # Ensure reports folder exists in auto-daily-report
+          mkdir -p reports
+
+          # Copy reports from main if they exist
+          if [ -d ../reports ]; then
+            cp -r ../reports/* reports/ || true
+          else
+            echo "⚠️ No reports found in main branch."
+          fi
+
+          # Stage only reports folder
           git add reports/
-          
+
           if ! git diff --cached --quiet; then
             git commit -m "chore(reports): update Lighthouse reports"
-            git push origin auto-daily-report
+            git push -f origin auto-daily-report
           else
             echo "No changes in reports — skipping commit."
           fi
