@@ -128,19 +128,18 @@ jobs:
             git checkout --orphan current-day-report
           fi
 
-          # 🧹 Cleanup: remove everything except reports/ and .git
-          # 1. Remove tracked files except reports/
-          git ls-files | grep -v '^reports/' | xargs -r git rm -rf --ignore-unmatch
+          # 🧹 Cleanup: remove everything except .git
+          # 1. Remove tracked files except .git
+          git ls-files | xargs -r git rm -rf --ignore-unmatch
 
-          # 2. Remove untracked files/folders except reports/
+          # 2. Remove untracked files/folders
           # -f = force
           # -d = recurse into dirs
           # -x = remove ignored files too
-          # -e reports = exclude reports/
-          git clean -fdx -e reports
+          git clean -fdx
 
-          # 3. Remove untracked files/folders except reports/ and .git (safety net)
-          find . -mindepth 1 -maxdepth 1 ! -name ".git" ! -name "reports" -exec rm -rf {} +
+          # 3. Remove untracked files/folders except .git (safety net)
+          find . -mindepth 1 -maxdepth 1 ! -name ".git" -exec rm -rf {} +
 
           mkdir -p reports
           git checkout main -- reports || true
@@ -148,7 +147,7 @@ jobs:
           git add -A
 
           if ! git diff --cached --quiet; then
-            git commit -m "chore(reports): refresh today's Lighthouse report"
+            git commit -m "chore(reports): update today's Lighthouse report"
             git push -f origin current-day-report
           else
             echo "No changes for current-day-report — skipping commit."
