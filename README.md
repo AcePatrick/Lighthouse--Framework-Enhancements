@@ -6,11 +6,8 @@
 - [Installation](#installation)
 - [Folder Structure](#folder-structure)
 - [Running Scripts](#running-scripts)
-- [Configuration](#configuration)
+- [Scheduled Reports (GitHub Actions)](#scheduled-reports-github-actions)
 - [Excel Reporting](#excel-reporting)
-- [Screenshots and Diagnostics](#screenshots-and-diagnostics)
-- [Utilities](#utilities)
-- [Future Enhancements](#future-enhancements)
 
 ## Introduction
 This is an automation framework using **Playwright** with **TypeScript** to run **Google Lighthouse** performance audits.  
@@ -27,12 +24,13 @@ The project is designed for reusability and scalability, allowing performance te
 - Dynamic configuration through `lighthouse.config.ts`
 - CLI user prompts for screenshot options
 - Organized folder structure for daily runs
+- GitHub Actions scheduled run to automatically generate and store reports
 
 ## Installation
 
 ### Prerequisites
 - Node.js  
-- npm
+- npm  
 
 ### Verify Installations
 ```bash
@@ -57,17 +55,25 @@ cd Private-Lighthouse-Automation
 npm install
 ```
 
+#### Install Playwright browsers:
+```bash
+npx playwright install
+```
+
 ## Folder Structure
 ```
 PRIVATE-LIGHTHOUSE-AUTOMATION/
-├── config/             # Configuration files for Lighthouse.
-├── data/               # Stores urls test data.
-├── reports/            # Location where test reports (e.g., Lighthouse results) are generated.
+├── .github/
+│   └── workflows/
+│       └── daily-run.yml      # GitHub Actions scheduled run configuration
+├── config/                    # Configuration files for Lighthouse.
+├── data/                      # Stores urls test data.
+├── reports/                   # Location where test reports (e.g., Lighthouse results) are generated.
 └── lighthouse-08-03-2025-09-59-21-AM/    # A timestamped directory for a specific Lighthouse report.
-    ├── html/                             # Contains the HTML version of the Lighthouse report.
+    ├── html-08-03-2025-09-59-21-AM/      # Contains the HTML version of the Lighthouse report.
     ├── json/                             # Contains the raw JSON data of the Lighthouse report.
     ├── screenshots/                      # Stores screenshots captured during the Lighthouse analysis.
-    ├── Excel_Template.xlsl               # Contains all the data from simplified text file summary.
+    ├── CheQ_Website_Production_Lighthouse Report_08-03-2025-09-59-21-AM.xlsx               # Contains all the data from simplified text file summary.
     └── lighthouse-simplified-data.txt    # A simplified text file summary of the Lighthouse results.
 ├── scripts/            # Houses main script runners for Lighthouse (e.g., Run all or single lighthouse).
 ├── template/           # Houses main template used to by generated excel report.
@@ -95,12 +101,24 @@ npm run all:lighthouse
 - Save reports and screenshots in the reports/ folder
 - Append results to Excel
 
+## Scheduled Reports (GitHub Actions)
+- This project includes a GitHub Actions workflow (.github/workflows/daily-run.yml) that automatically runs Lighthouse daily and pushes results to report branches.
+
+### Accessing Reports
+- Today’s report only (snapshot branch, replaced daily):
+
+```bash
+git clone --branch auto-daily-report --single-branch https://github.com/avidcutlet/Private-Lighthouse-Automation.git
+```
+
+- All historical reports (append-only branch):
+
+```bash
+git clone --branch current-day-report --single-branch https://github.com/avidcutlet/Private-Lighthouse-Automation.git
+```
+- Reports are updated daily at 9:35 AM PHT.
+
 ## Excel Reporting
 ### The framework uses ExcelJS to log performance results.
 - Each run appends results to the template file in /reports
 - Multiple sheets store overall scores, diagnostics, and audit details
-
-## Screenshots and Diagnostics
-- First diagnostic block is captured from the HTML report
-- PNG screenshots are saved with filenames containing URL and timestamp
-- TXT files log simplified audit results with scores and paths
