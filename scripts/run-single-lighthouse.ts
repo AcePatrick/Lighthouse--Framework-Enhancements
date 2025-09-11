@@ -14,8 +14,6 @@ const lighthouseRuns: Promise<void>[] = [];
 
 // Run all 4 in parallel and wait for all to finish
 (async () => {
-  // IN PROGRESS...
-  // const screenshotOption = await askScreenshotOption();
 
   const url = [SINGLE_TEST_URL];
   let taskIndex = 0;

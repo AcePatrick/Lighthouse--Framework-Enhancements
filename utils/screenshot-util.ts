@@ -4,7 +4,6 @@ import fs from 'fs';
 
 import { locatorExplicitWait } from '@config/lighthouse.config';
 import { sanitizeUrl } from '@utils/report-path-util';
-import { shouldTakeScreenshot } from '@utils/user-input-util';
 
 export type DeviceType = 'Mobile' | 'Desktop';
 
@@ -215,4 +214,23 @@ async function getAuditsData(
   }
 
   return { auditTitleTxt, auditRedirectTxt, auditRedirectLinkTxt, auditScreenshotPath };
+}
+
+function shouldTakeScreenshot(
+  device: DeviceType,
+  isIncognito: boolean,
+  option: number
+): boolean {
+  switch (option) {
+    case 1: return device === 'Mobile' && !isIncognito;
+    case 2: return device === 'Mobile' && isIncognito;
+    case 3: return device === 'Desktop' && !isIncognito;
+    case 4: return device === 'Desktop' && isIncognito;
+    case 5: return device === 'Mobile';
+    case 6: return device === 'Desktop';
+    case 7: return !isIncognito;
+    case 8: return isIncognito;
+    case 9: return true;
+    default: return false;
+  }
 }

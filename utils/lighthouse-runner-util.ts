@@ -7,6 +7,7 @@ import { reportTimestamp } from '@config/lighthouse.config';
 import { arrangeFiles, getLighthouseOutputFilePaths } from '@utils/report-path-util';
 import { screenshotDiagnosticsBlock } from '@utils/screenshot-util';
 import { textWriterUtil } from '@utils/text-writer-util';
+import { performanceScoreRating } from './performance-score-rating-util';
 
 export const runLighthouse = async (
   url: string,
@@ -45,7 +46,7 @@ export const runLighthouse = async (
     
     const logTimestamp = reportTimestamp(report.fetchTime);
     
-    // console.log('📋 Report Rating: ${performanceScoreRating(performanceScore)}');
+    console.log(`📋 Report Rating: ${performanceScoreRating(performanceScore)} at ${performanceScore}`);
     
     const htmlReportPath = `${reportPath}.report.html`;
     let {

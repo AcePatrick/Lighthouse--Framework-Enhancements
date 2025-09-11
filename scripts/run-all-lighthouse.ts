@@ -16,9 +16,6 @@ const BATCH_SIZE = 4;
 (async () => {
   const outputDir = await getLighthouseOutputPaths(`lighthouse-${OUTPUT_FOLDER_TIMESTAMP}`);
   const excelPath = prepareExcelCopy(outputDir);
-  // IN PROGRESS...
-  // const screenshotOption = await askScreenshotOption();
-  
 
   const allTasks: (() => Promise<void>)[] = [];
   const totalTasks = ALL_TEST_URLS.length * devices.length * modes.length;
