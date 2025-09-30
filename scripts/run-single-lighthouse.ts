@@ -8,7 +8,7 @@ import { prepareExcelCopy, writeAllToExcel } from '@utils/excel-writer-util';
 import { getLighthouseOutputPaths } from '@utils/report-path-util';
 
 const devices: ('Mobile' | 'Desktop')[] = ['Mobile', 'Desktop'];
-const modes: boolean[] = [false, true]; // false = normal, true = incognito
+const modes: boolean[] = [false, true]; // false = with cache, true = without cache/incognito
 
 const lighthouseRuns: Promise<void>[] = [];
 

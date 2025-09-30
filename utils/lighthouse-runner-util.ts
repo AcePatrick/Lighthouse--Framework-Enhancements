@@ -39,6 +39,20 @@ export const runLighthouse = async (
       { stdio: 'inherit' }
     );
 
+    // const cpuMultiplier = 4;
+    // execSync(`npx lighthouse ${url} \
+    //   --output json \
+    //   --output html \
+    //   --output-path "${reportPath}" \
+    //   ${preset} \
+    //   --quiet \
+    //   --chrome-flags="${chromeFlags}" \
+    //   --no-enable-error-reporting \
+    //   --throttling-method=devtools \
+    //   --throttling.cpuSlowdownMultiplier=${cpuMultiplier}`,
+    //   { stdio: 'inherit' }
+    // );
+
     // Write data to txt file
     const jsonReportPath = `${reportPath}.report.json`;
     const report = JSON.parse(fs.readFileSync(jsonReportPath, 'utf8'));
