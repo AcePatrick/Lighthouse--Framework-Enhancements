@@ -52,6 +52,8 @@ on:
     # added 25 mins queue on schedule
     - cron: "35 1 * * 0" 
     - cron: "35 1 * * 6" 
+    # October 31 - Holiday run
+    - cron: "35 1 31 10 *" 
   workflow_dispatch:      # allow manual run
 
 jobs:
