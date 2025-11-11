@@ -32,7 +32,7 @@ const BATCH_SIZE = 4;
         // Push task as a function that returns a promise
         allTasks.push(() =>
           runLighthouse(
-            url, 
+            url,
             device,
             isIncognito,
             screenshotOption,
@@ -49,7 +49,7 @@ const BATCH_SIZE = 4;
   // Overall run time tracker
   const startTime = Date.now();
   console.log(`🕐 Started at: ${new Date(startTime).toLocaleString()}`);
-  
+
   // Batch run tasks 4 at a time
   const allTasksLength = allTasks.length;
   for (let i = 0; i < allTasksLength; i += BATCH_SIZE) {
@@ -62,9 +62,9 @@ const BATCH_SIZE = 4;
     path.join(outputDir, 'lighthouse-simplified-data.txt'),
     excelPath
   );
-  
+
   console.log('\n🌟 All Lighthouse runs completed.');
-  
+
   // Overall run time tracker
   const endTime = Date.now();
   const durationSec = (endTime - startTime) / 1000;

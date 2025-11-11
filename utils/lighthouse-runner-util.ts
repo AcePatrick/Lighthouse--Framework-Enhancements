@@ -27,41 +27,44 @@ export const runLighthouse = async (
 
   try {
     console.log(`\n🚀 Running Lighthouse [${label}] on ${url}`);
-    
-    execSync(`npx lighthouse ${url} \
-      --output json \
-      --output html \
-      --output-path "${reportPath}" \
-      ${preset} \
-      --quiet \
-      --chrome-flags="${chromeFlags}" \
-      --no-enable-error-reporting`,
-      { stdio: 'inherit' }
-    );
 
-    // const cpuMultiplier = 4;
-    // execSync(`npx lighthouse ${url} \
-    //   --output json \
-    //   --output html \
-    //   --output-path "${reportPath}" \
-    //   ${preset} \
-    //   --quiet \
-    //   --chrome-flags="${chromeFlags}" \
-    //   --no-enable-error-reporting \
-    //   --throttling-method=devtools \
-    //   --throttling.cpuSlowdownMultiplier=${cpuMultiplier}`,
-    //   { stdio: 'inherit' }
-    // );
+    if (device === "Desktop") {
+
+      execSync(`npx lighthouse ${url} \
+        --output json \
+        --output html \
+        --output-path "${reportPath}" \
+        ${preset} \
+        --quiet \
+        --chrome-flags="${chromeFlags}" \
+        --no-enable-error-reporting`,
+        { stdio: 'inherit' }
+      );
+    } else {
+      const cpuMultiplier = 3;
+      execSync(`npx lighthouse ${url} \
+        --output json \
+        --output html \
+        --output-path "${reportPath}" \
+        ${preset} \
+        --quiet \
+        --chrome-flags="${chromeFlags}" \
+        --no-enable-error-reporting \
+        --throttling-method=devtools \
+        --throttling.cpuSlowdownMultiplier=${cpuMultiplier}`,
+        { stdio: 'inherit' }
+      );
+    }
 
     // Write data to txt file
     const jsonReportPath = `${reportPath}.report.json`;
     const report = JSON.parse(fs.readFileSync(jsonReportPath, 'utf8'));
     const performanceScore = Math.round(report.categories.performance.score * 100);
-    
+
     const logTimestamp = reportTimestamp(report.fetchTime);
-    
+
     console.log(`📋 Report Rating: ${performanceScoreRating(performanceScore)} at ${performanceScore}`);
-    
+
     const htmlReportPath = `${reportPath}.report.html`;
     let {
       diagnosticsData,
@@ -94,7 +97,7 @@ export const runLighthouse = async (
       await arrangeFiles(outputDir);
       console.log(`\n✅ Done. Lighthouse report saved in: ${outputDir}`);
     }
-    
+
   } catch (err) {
     console.error(`\n❌ Lighthouse failed for ${label}:`, err);
   }

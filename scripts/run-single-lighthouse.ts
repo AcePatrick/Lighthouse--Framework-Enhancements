@@ -21,7 +21,7 @@ const lighthouseRuns: Promise<void>[] = [];
 
   const outputDir = await getLighthouseOutputPaths(`lighthouse-${OUTPUT_FOLDER_TIMESTAMP}`);
   const excelPath = prepareExcelCopy(outputDir);
-  
+
   for (const device of devices) {
     for (const isIncognito of modes) {
       const modeLabel = isIncognito ? 'Incognito' : 'Normal';
