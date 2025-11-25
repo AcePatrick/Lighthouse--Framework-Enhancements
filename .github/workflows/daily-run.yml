@@ -50,8 +50,8 @@ on:
     # run every weekends at 9:35 AM PHT
     # 1:35 AM UTC = 9:35 AM PHT
     # added 25 mins queue on schedule
-    #- cron: "35 1 * * 0"
-    #- cron: "35 1 * * 6"
+    - cron: "35 1 * * 0"
+    - cron: "35 1 * * 6"
     # Add holiday runs here
     #- cron: "* * * * *"
   workflow_dispatch:      # allow manual run
