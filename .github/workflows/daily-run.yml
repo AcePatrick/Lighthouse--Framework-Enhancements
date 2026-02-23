@@ -55,8 +55,11 @@ on:
     - cron: "35 1 * * 6"
     # Add holiday runs here
     #- cron: "35 1 30 12 *"
-    - cron: "35 1 * * 4"
-    - cron: "35 1 * * 5"
+    - cron: "10 1 * * 1"
+    - cron: "10 1 * * 2"
+    - cron: "10 1 * * 3"
+    - cron: "10 1 * * 4"
+    - cron: "10 1 * * 5"
   workflow_dispatch:      # allow manual run
 
 jobs:
