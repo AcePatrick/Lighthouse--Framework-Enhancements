@@ -1,0 +1,480 @@
+
+[Mar 1, 2026, 12:09:44 PM] https://www.cheqsystems.com - Mobile-Incognito:
+Score: 89
+Time: Mar 1, 2026, 12:09:44 PM
+Diagnostic Title Text: Reduce the impact of third-party code
+Diagnostic Display Text: Third-party code blocked the main thread for 270 ms
+Diagnostic Redirect Text: Learn how to minimize third-party impact
+Diagnostic Redirect Link Text: https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_cheqsystems_com-Mobile-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM
+
+[Mar 1, 2026, 12:10:33 PM] https://www.cheqsystems.com - Desktop-Incognito:
+Score: 88
+Time: Mar 1, 2026, 12:10:33 PM
+Diagnostic Title Text: Largest Contentful Paint element
+Diagnostic Display Text: 2,230 ms
+Diagnostic Redirect Text: Learn more about the Largest Contentful Paint element
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_cheqsystems_com-Desktop-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM
+
+[Mar 1, 2026, 12:10:19 PM] https://www.cheqsystems.com - Desktop-Normal:
+Score: 88
+Time: Mar 1, 2026, 12:10:19 PM
+Diagnostic Title Text: Largest Contentful Paint element
+Diagnostic Display Text: 2,260 ms
+Diagnostic Redirect Text: Learn more about the Largest Contentful Paint element
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_cheqsystems_com-Desktop-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM
+
+[Mar 1, 2026, 12:09:10 PM] https://www.cheqsystems.com - Mobile-Normal:
+Score: 89
+Time: Mar 1, 2026, 12:09:10 PM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 2.0 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM/screenshot/diagnostic-www_cheqsystems_com-Mobile-Normal.png
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM/screenshot/audit-www_cheqsystems_com-Mobile-Normal.png
+Html Report Path: www_cheqsystems_com-Mobile-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM
+
+[Mar 1, 2026, 12:11:28 PM] https://www.cheqsystems.com/testing-services - Mobile-Incognito:
+Score: 72
+Time: Mar 1, 2026, 12:11:28 PM
+Diagnostic Title Text: Largest Contentful Paint image was lazily loaded
+Diagnostic Display Text: 
+Diagnostic Redirect Text: Learn more about optimal lazy loading
+Diagnostic Redirect Link Text: https://web.dev/articles/lcp-lazy-loading?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_cheqsystems_com_testing-services-Mobile-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM
+
+[Mar 1, 2026, 12:12:06 PM] https://www.cheqsystems.com/testing-services - Desktop-Normal:
+Score: 83
+Time: Mar 1, 2026, 12:12:06 PM
+Diagnostic Title Text: Avoid large layout shifts
+Diagnostic Display Text: 2 layout shifts found
+Diagnostic Redirect Text: Learn how to improve CLS
+Diagnostic Redirect Link Text: https://web.dev/articles/optimize-cls?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_cheqsystems_com_testing-services-Desktop-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM
+
+[Mar 1, 2026, 12:12:20 PM] https://www.cheqsystems.com/testing-services - Desktop-Incognito:
+Score: 82
+Time: Mar 1, 2026, 12:12:20 PM
+Diagnostic Title Text: Avoid large layout shifts
+Diagnostic Display Text: 2 layout shifts found
+Diagnostic Redirect Text: Learn how to improve CLS
+Diagnostic Redirect Link Text: https://web.dev/articles/optimize-cls?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_cheqsystems_com_testing-services-Desktop-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM
+
+[Mar 1, 2026, 12:10:51 PM] https://www.cheqsystems.com/testing-services - Mobile-Normal:
+Score: 73
+Time: Mar 1, 2026, 12:10:51 PM
+Diagnostic Title Text: Largest Contentful Paint image was lazily loaded
+Diagnostic Display Text: 
+Diagnostic Redirect Text: Learn more about optimal lazy loading
+Diagnostic Redirect Link Text: https://web.dev/articles/lcp-lazy-loading?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM/screenshot/diagnostic-www_cheqsystems_com_testing-services-Mobile-Normal.png
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM/screenshot/audit-www_cheqsystems_com_testing-services-Mobile-Normal.png
+Html Report Path: www_cheqsystems_com_testing-services-Mobile-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM
+
+[Mar 1, 2026, 12:13:57 PM] https://www.cheqsystems.com/about - Desktop-Incognito:
+Score: 98
+Time: Mar 1, 2026, 12:13:57 PM
+Diagnostic Title Text: Eliminate render-blocking resources
+Diagnostic Display Text: Est savings of 220 ms
+Diagnostic Redirect Text: Learn how to eliminate render-blocking resources
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_cheqsystems_com_about-Desktop-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM
+
+[Mar 1, 2026, 12:13:43 PM] https://www.cheqsystems.com/about - Desktop-Normal:
+Score: 98
+Time: Mar 1, 2026, 12:13:43 PM
+Diagnostic Title Text: Eliminate render-blocking resources
+Diagnostic Display Text: Est savings of 180 ms
+Diagnostic Redirect Text: Learn how to eliminate render-blocking resources
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_cheqsystems_com_about-Desktop-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM
+
+[Mar 1, 2026, 12:13:11 PM] https://www.cheqsystems.com/about - Mobile-Incognito:
+Score: 93
+Time: Mar 1, 2026, 12:13:11 PM
+Diagnostic Title Text: Eliminate render-blocking resources
+Diagnostic Display Text: Est savings of 1,590 ms
+Diagnostic Redirect Text: Learn how to eliminate render-blocking resources
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_cheqsystems_com_about-Mobile-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM
+
+[Mar 1, 2026, 12:12:38 PM] https://www.cheqsystems.com/about - Mobile-Normal:
+Score: 92
+Time: Mar 1, 2026, 12:12:38 PM
+Diagnostic Title Text: Eliminate render-blocking resources
+Diagnostic Display Text: Est savings of 1,510 ms
+Diagnostic Redirect Text: Learn how to eliminate render-blocking resources
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM/screenshot/diagnostic-www_cheqsystems_com_about-Mobile-Normal.png
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM/screenshot/audit-www_cheqsystems_com_about-Mobile-Normal.png
+Html Report Path: www_cheqsystems_com_about-Mobile-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM
+
+[Mar 1, 2026, 12:15:02 PM] https://www.cheqsystems.com/news - Mobile-Incognito:
+Score: 66
+Time: Mar 1, 2026, 12:15:02 PM
+Diagnostic Title Text: Largest Contentful Paint element
+Diagnostic Display Text: 9,050 ms
+Diagnostic Redirect Text: Learn more about the Largest Contentful Paint element
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_cheqsystems_com_news-Mobile-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM
+
+[Mar 1, 2026, 12:15:49 PM] https://www.cheqsystems.com/news - Desktop-Normal:
+Score: 77
+Time: Mar 1, 2026, 12:15:49 PM
+Diagnostic Title Text: Largest Contentful Paint element
+Diagnostic Display Text: 4,330 ms
+Diagnostic Redirect Text: Learn more about the Largest Contentful Paint element
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_cheqsystems_com_news-Desktop-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM
+
+[Mar 1, 2026, 12:14:14 PM] https://www.cheqsystems.com/news - Mobile-Normal:
+Score: 66
+Time: Mar 1, 2026, 12:14:14 PM
+Diagnostic Title Text: Largest Contentful Paint element
+Diagnostic Display Text: 9,030 ms
+Diagnostic Redirect Text: Learn more about the Largest Contentful Paint element
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM/screenshot/diagnostic-www_cheqsystems_com_news-Mobile-Normal.png
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM/screenshot/audit-www_cheqsystems_com_news-Mobile-Normal.png
+Html Report Path: www_cheqsystems_com_news-Mobile-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM
+
+[Mar 1, 2026, 12:16:04 PM] https://www.cheqsystems.com/news - Desktop-Incognito:
+Score: 77
+Time: Mar 1, 2026, 12:16:04 PM
+Diagnostic Title Text: Largest Contentful Paint element
+Diagnostic Display Text: 4,540 ms
+Diagnostic Redirect Text: Learn more about the Largest Contentful Paint element
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_cheqsystems_com_news-Desktop-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM
+
+[Mar 1, 2026, 12:17:01 PM] https://www.cheqsystems.com/careers - Mobile-Incognito:
+Score: 93
+Time: Mar 1, 2026, 12:17:01 PM
+Diagnostic Title Text: Eliminate render-blocking resources
+Diagnostic Display Text: Est savings of 1,570 ms
+Diagnostic Redirect Text: Learn how to eliminate render-blocking resources
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_cheqsystems_com_careers-Mobile-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM
+
+[Mar 1, 2026, 12:17:40 PM] https://www.cheqsystems.com/careers - Desktop-Normal:
+Score: 98
+Time: Mar 1, 2026, 12:17:40 PM
+Diagnostic Title Text: Eliminate render-blocking resources
+Diagnostic Display Text: Est savings of 250 ms
+Diagnostic Redirect Text: Learn how to eliminate render-blocking resources
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_cheqsystems_com_careers-Desktop-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM
+
+[Mar 1, 2026, 12:17:54 PM] https://www.cheqsystems.com/careers - Desktop-Incognito:
+Score: 98
+Time: Mar 1, 2026, 12:17:54 PM
+Diagnostic Title Text: Eliminate render-blocking resources
+Diagnostic Display Text: Est savings of 250 ms
+Diagnostic Redirect Text: Learn how to eliminate render-blocking resources
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_cheqsystems_com_careers-Desktop-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM
+
+[Mar 1, 2026, 12:16:22 PM] https://www.cheqsystems.com/careers - Mobile-Normal:
+Score: 93
+Time: Mar 1, 2026, 12:16:22 PM
+Diagnostic Title Text: Eliminate render-blocking resources
+Diagnostic Display Text: Est savings of 1,450 ms
+Diagnostic Redirect Text: Learn how to eliminate render-blocking resources
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM/screenshot/diagnostic-www_cheqsystems_com_careers-Mobile-Normal.png
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM/screenshot/audit-www_cheqsystems_com_careers-Mobile-Normal.png
+Html Report Path: www_cheqsystems_com_careers-Mobile-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM
+
+[Mar 1, 2026, 12:19:26 PM] https://www.cheqsystems.com/contact - Desktop-Normal:
+Score: 100
+Time: Mar 1, 2026, 12:19:26 PM
+Diagnostic Title Text: Eliminate render-blocking resources
+Diagnostic Display Text: Est savings of 390 ms
+Diagnostic Redirect Text: Learn how to eliminate render-blocking resources
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_cheqsystems_com_contact-Desktop-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM
+
+[Mar 1, 2026, 12:18:49 PM] https://www.cheqsystems.com/contact - Mobile-Incognito:
+Score: 80
+Time: Mar 1, 2026, 12:18:49 PM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 3.5 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_cheqsystems_com_contact-Mobile-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM
+
+[Mar 1, 2026, 12:19:44 PM] https://www.cheqsystems.com/contact - Desktop-Incognito:
+Score: 97
+Time: Mar 1, 2026, 12:19:44 PM
+Diagnostic Title Text: Eliminate render-blocking resources
+Diagnostic Display Text: Est savings of 370 ms
+Diagnostic Redirect Text: Learn how to eliminate render-blocking resources
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_cheqsystems_com_contact-Desktop-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM
+
+[Mar 1, 2026, 12:18:11 PM] https://www.cheqsystems.com/contact - Mobile-Normal:
+Score: 81
+Time: Mar 1, 2026, 12:18:11 PM
+Diagnostic Title Text: Minimize main-thread work
+Diagnostic Display Text: 3.6 s
+Diagnostic Redirect Text: Learn how to minimize main-thread work
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM/screenshot/diagnostic-www_cheqsystems_com_contact-Mobile-Normal.png
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM/screenshot/audit-www_cheqsystems_com_contact-Mobile-Normal.png
+Html Report Path: www_cheqsystems_com_contact-Mobile-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM
+
+[Mar 1, 2026, 12:21:09 PM] https://www.cheqsystems.com/privacy-policy - Desktop-Normal:
+Score: 92
+Time: Mar 1, 2026, 12:21:09 PM
+Diagnostic Title Text: Eliminate render-blocking resources
+Diagnostic Display Text: Est savings of 440 ms
+Diagnostic Redirect Text: Learn how to eliminate render-blocking resources
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_cheqsystems_com_privacy-policy-Desktop-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM
+
+[Mar 1, 2026, 12:20:37 PM] https://www.cheqsystems.com/privacy-policy - Mobile-Incognito:
+Score: 95
+Time: Mar 1, 2026, 12:20:37 PM
+Diagnostic Title Text: Eliminate render-blocking resources
+Diagnostic Display Text: Est savings of 1,820 ms
+Diagnostic Redirect Text: Learn how to eliminate render-blocking resources
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_cheqsystems_com_privacy-policy-Mobile-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM
+
+[Mar 1, 2026, 12:21:22 PM] https://www.cheqsystems.com/privacy-policy - Desktop-Incognito:
+Score: 98
+Time: Mar 1, 2026, 12:21:22 PM
+Diagnostic Title Text: Eliminate render-blocking resources
+Diagnostic Display Text: Est savings of 530 ms
+Diagnostic Redirect Text: Learn how to eliminate render-blocking resources
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_cheqsystems_com_privacy-policy-Desktop-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM
+
+[Mar 1, 2026, 12:20:05 PM] https://www.cheqsystems.com/privacy-policy - Mobile-Normal:
+Score: 95
+Time: Mar 1, 2026, 12:20:05 PM
+Diagnostic Title Text: Eliminate render-blocking resources
+Diagnostic Display Text: Est savings of 1,890 ms
+Diagnostic Redirect Text: Learn how to eliminate render-blocking resources
+Diagnostic Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM/screenshot/diagnostic-www_cheqsystems_com_privacy-policy-Mobile-Normal.png
+Audit Title Text: Properly size images
+Audit Redirect Text: Learn how to size images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM/screenshot/audit-www_cheqsystems_com_privacy-policy-Mobile-Normal.png
+Html Report Path: www_cheqsystems_com_privacy-policy-Mobile-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM
+
+[Mar 1, 2026, 12:22:23 PM] https://www.cheqsystems.com/game-testing - Mobile-Incognito:
+Score: 71
+Time: Mar 1, 2026, 12:22:23 PM
+Diagnostic Title Text: Avoid large layout shifts
+Diagnostic Display Text: 1 layout shift found
+Diagnostic Redirect Text: Learn how to improve CLS
+Diagnostic Redirect Link Text: https://web.dev/articles/optimize-cls?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_cheqsystems_com_game-testing-Mobile-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM
+
+[Mar 1, 2026, 12:23:08 PM] https://www.cheqsystems.com/game-testing - Desktop-Normal:
+Score: 93
+Time: Mar 1, 2026, 12:23:08 PM
+Diagnostic Title Text: Largest Contentful Paint image was lazily loaded
+Diagnostic Display Text: 
+Diagnostic Redirect Text: Learn more about optimal lazy loading
+Diagnostic Redirect Link Text: https://web.dev/articles/lcp-lazy-loading?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_cheqsystems_com_game-testing-Desktop-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM
+
+[Mar 1, 2026, 12:23:30 PM] https://www.cheqsystems.com/game-testing - Desktop-Incognito:
+Score: 92
+Time: Mar 1, 2026, 12:23:30 PM
+Diagnostic Title Text: Largest Contentful Paint image was lazily loaded
+Diagnostic Display Text: 
+Diagnostic Redirect Text: Learn more about optimal lazy loading
+Diagnostic Redirect Link Text: https://web.dev/articles/lcp-lazy-loading?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: skipped
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: skipped
+Html Report Path: www_cheqsystems_com_game-testing-Desktop-Incognito.report.html
+Output Report Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM
+
+[Mar 1, 2026, 12:21:39 PM] https://www.cheqsystems.com/game-testing - Mobile-Normal:
+Score: 74
+Time: Mar 1, 2026, 12:21:39 PM
+Diagnostic Title Text: Avoid large layout shifts
+Diagnostic Display Text: 1 layout shift found
+Diagnostic Redirect Text: Learn how to improve CLS
+Diagnostic Redirect Link Text: https://web.dev/articles/optimize-cls?utm_source=lighthouse&utm_medium=cli
+Diagnostic Screenshot Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM/screenshot/diagnostic-www_cheqsystems_com_game-testing-Mobile-Normal.png
+Audit Title Text: Defer offscreen images
+Audit Redirect Text: Learn how to defer offscreen images
+Audit Redirect Link Text: https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/?utm_source=lighthouse&utm_medium=cli
+Audit Screenshot Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM/screenshot/audit-www_cheqsystems_com_game-testing-Mobile-Normal.png
+Html Report Path: www_cheqsystems_com_game-testing-Mobile-Normal.report.html
+Output Report Path: /home/runner/work/Lighthouse-Automation-Enhancements/Lighthouse-Automation-Enhancements/reports/lighthouse-03-01-2026-12-08-19-PM
