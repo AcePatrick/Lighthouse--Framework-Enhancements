@@ -71,12 +71,12 @@ export const runLighthouse = async (
 
       // Stop rerun early if not Poor
       if (rating !== "💣 Poor") {
-        console.log(`✅ Acceptable score achieved. Stopping reruns.`);
+        console.log(`✅ Acceptable score achieved. Reruns will be stopped.`);
         break;
       }
 
       if (attempt < MAX_RERUNS) {
-        console.log(`🔁 Poor score detected. Re-running Lighthouse...`);
+        console.log(`🔁 Poor score detected. Rerunning Lighthouse...`);
       }
 
     } catch (err) {
