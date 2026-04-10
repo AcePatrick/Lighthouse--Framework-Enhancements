@@ -42,12 +42,12 @@ npm -v
 
 #### Clone the repository:
 ```bash
-git clone https://github.com/avidcutlet/Private-Lighthouse-Automation.git
+git clone https://github.com/Airah-Mae/Lighthouse-Automation-Enhancements.git
 ```
 
 #### Navigate to the project directory:
 ```bash
-cd Private-Lighthouse-Automation
+cd Lighthouse-Automation-Enhancements
 ```
 
 #### Install dependencies:
